@@ -27,7 +27,7 @@
 270 OUT (17H),A ; disable periph. interrupts
 280 IN A, (19H)
 290 PUSH AF
-300 LD B, 0x50  ; /CEROM2=L,  BANK1=0, BANK0=1
+300 LD B, 50H  ; /CEROM2=L,  BANK1=0, BANK0=1
 310 OR B
 320 OUT (0x19),A
 330 ;
